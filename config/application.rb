@@ -23,5 +23,7 @@ module Sample
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.cache_store = ActiveSupport::Cache.lookup_store :redis_cache_store
   end
 end
